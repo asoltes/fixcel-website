@@ -152,3 +152,79 @@ footer {
     align-items: center;
   }
 }
+
+/* container spacing & max width */
+.our‑services {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* flex layout */
+.services‑list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;                  /* space between cards */
+}
+
+/* each “card” */
+.services‑list > li {
+  /* background: #e6f7ff; */
+  border-radius: 8px;
+  padding: 1.5rem;
+  flex: 1 1 calc(33% - 2rem); /* three columns, minus gap */
+  box-sizing: border-box;
+  position: relative;
+  color: #001f3f;
+}
+
+/* check icon */
+.services‑list > li::before {
+  content: "✔";
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffdc57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #001f3f;
+}
+
+/* card title sits just after the icon */
+.services‑list > li > strong {
+  display: block;
+  margin-left: 2.7rem; /* icon width + spacing */
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* inner list styling */
+.services‑list li > ul {
+  list-style: disc;
+  margin: 0 0 0 2.7rem;  /* align with title text */
+  padding: 0;
+  color: #333;
+}
+.services‑list li > ul > li {
+  margin-bottom: 0.4rem;
+}
+
+/* responsive breakpoints */
+@media (max-width: 900px) {
+  .services‑list > li {
+    flex: 1 1 calc(50% - 2rem); /* two columns */
+  }
+}
+@media (max-width: 600px) {
+  .services‑list > li {
+    flex: 1 1 100%;             /* full‑width on small screens */
+  }
+}
