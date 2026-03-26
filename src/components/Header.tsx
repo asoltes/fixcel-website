@@ -69,7 +69,7 @@ export default function Header() {
         {/* Title */}
         <h1 className="text-white font-extrabold leading-tight mb-3"
             style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)' }}>
-          Quality Used &amp; Second-Hand<br className="hidden sm:block" /> Laptops for Sale
+          Computer and Laptop Repair Services
         </h1>
 
         {/* Subtitle */}
