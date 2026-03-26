@@ -134,11 +134,15 @@ function RepairSlideshow() {
         </div>
 
         {/* Centre — main content */}
+        
         <div
           key={current}
           className="relative z-10 flex-1 flex flex-col justify-center px-16"
           style={{ animation: 'slideIn 0.5s ease-out' }}
-        >
+        > <p className="text-white/50 font-semibold uppercase tracking-widest mb-2"
+             style={{ fontSize: '0.9rem' }}>
+            Prices are estimates and may vary depending on device model and parts availability. Final price confirmed after diagnostic.
+          </p>
           <p className="text-white/60 font-semibold uppercase tracking-widest mb-4"
              style={{ fontSize: '1.3rem' }}>
             Service
