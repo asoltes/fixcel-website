@@ -1,0 +1,66 @@
+import type { RepairCategory } from '../types'
+
+export const repairCategories: RepairCategory[] = [
+  {
+    id: 1,
+    title: 'Board Level Repair',
+    description: 'Deep motherboard diagnostics and component-level fixes.',
+    gradient: 'from-red-600 to-rose-900',
+    iconType: 'circuit',
+    items: [
+      { name: 'No Power Issue',         priceRange: '₱800 – ₱2,500',  turnaround: '1–3 days'  },
+      { name: 'No Display / Blank Screen', priceRange: '₱500 – ₱2,000', turnaround: '1–2 days' },
+      { name: 'BIOS Password Removal',  priceRange: '₱500',            turnaround: 'Same day'  },
+      { name: 'Garbage / Distorted Display', priceRange: '₱500 – ₱1,500', turnaround: '1–2 days' },
+      { name: 'Water Damage Recovery',  priceRange: '₱1,000 – ₱3,000', turnaround: '2–5 days' },
+      { name: 'No Backlight Fix',       priceRange: '₱800 – ₱2,000',  turnaround: '1–2 days'  },
+      { name: 'Hinges Repair',          priceRange: '₱500 – ₱1,500',  turnaround: 'Same day'  },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Hardware Replacement',
+    description: 'Genuine part swaps and hardware upgrades done right.',
+    gradient: 'from-blue-600 to-blue-900',
+    iconType: 'wrench',
+    items: [
+      { name: 'LCD / Screen Replacement', priceRange: '₱1,500 – ₱3,500', turnaround: 'Same day' },
+      { name: 'Battery Replacement',    priceRange: '₱600 – ₱1,500',  turnaround: 'Same day'  },
+      { name: 'Keyboard Replacement',   priceRange: '₱600 – ₱1,500',  turnaround: 'Same day'  },
+      { name: 'SSD / HDD Upgrade',      priceRange: '₱200 (labor)',    turnaround: 'Same day'  },
+      { name: 'RAM Upgrade',            priceRange: '₱200 (labor)',    turnaround: 'Same day'  },
+      { name: 'Charger Port Repair',    priceRange: '₱500 – ₱1,500',  turnaround: 'Same day'  },
+      { name: 'Charger Replacement',    priceRange: '₱500 – ₱1,200',  turnaround: 'Same day'  },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Software Services',
+    description: 'OS installs, virus removal, data recovery, and optimization.',
+    gradient: 'from-emerald-600 to-emerald-900',
+    iconType: 'code',
+    items: [
+      { name: 'OS Installation (Win / Mac / Linux)', priceRange: '₱300 – ₱500', turnaround: 'Same day' },
+      { name: 'Virus & Malware Removal', priceRange: '₱300 – ₱500',  turnaround: 'Same day'  },
+      { name: 'Data Recovery',          priceRange: '₱500 – ₱2,000', turnaround: '1–3 days'  },
+      { name: 'System Optimization',    priceRange: '₱250',          turnaround: 'Same day'  },
+      { name: 'BIOS Update',            priceRange: '₱200',          turnaround: 'Same day'  },
+      { name: 'Driver Installation',    priceRange: '₱200',          turnaround: 'Same day'  },
+      { name: 'Software Setup & Config', priceRange: '₱200 – ₱400', turnaround: 'Same day'  },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Cleaning & Maintenance',
+    description: 'Keep your machine cool, quiet, and running like new.',
+    gradient: 'from-amber-500 to-orange-800',
+    iconType: 'sparkle',
+    items: [
+      { name: 'Full Internal Cleaning',        priceRange: '₱300 – ₱500', turnaround: 'Same day' },
+      { name: 'Thermal Paste Replacement',     priceRange: '₱200 – ₱300', turnaround: 'Same day' },
+      { name: 'Cooling Fan Replacement',       priceRange: '₱500 – ₱1,000', turnaround: 'Same day' },
+      { name: 'Deep Clean + Thermal Repaste',  priceRange: '₱500 – ₱800', turnaround: 'Same day' },
+      { name: 'Dust Blowout (External)',       priceRange: '₱100',         turnaround: 'Same day' },
+    ],
+  },
+]
